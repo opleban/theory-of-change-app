@@ -1,53 +1,62 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToCBoard from './components/toc-board';
+import './styles/styles.css';
 
 class App extends Component {
   render() {
-    const stages = {
+    const board = {
       title: 'Participatory Budget',
       style: 'default',
       stages: [
         {
           order: 1,
           stageTitle: 'Problems',
-          hoverText: 'I have 99 problems...',
+          stageDesc: 'I have 99 problems...',
         },
         {
           order: 2,
           stageTitle: 'Inputs-Activities',
-          hoverText: 'Insert coin here.'
+          stageDesc: 'Insert coin here.'
         },
         {
           order: 3,
           stageTitle: 'Output',
-          hoverText: 'Point this way forward.'
+          stageDesc: 'Point this way forward.'
 
         },
         {
           order: 4,
           stageTitle: 'Intermediate Outcome',
-          hoverText: 'Short-term gain'
+          stageDesc: 'Short-term gain'
         },
         { order: 5,
           stageTitle: 'Final Outcome',
-          hoverText: 'Profit'
+          stageDesc: 'Profit'
+        }
+      ],
+      cards: [
+        {
+          cardStage: 'Problem',
+          cardText: 'Policy in San Fermin does not reflect local knowledge (municipal officials lack knowledge of citizens needs and preferences)'
+        },
+        {
+          cardStage: 'Inputs-Activities',
+          cardText: 'Grupo Motor identifes key stakeholders with local knowledge.'
+        },
+        {
+          cardStage: 'Inputs-Activities',
+          cardText: 'Grupo Motor develops questionnaire for needs assesment and ran survey'
+        },
+        {
+          cardstage: 'Inputs-Activities',
+          cardHtml: '<p>Citizens provide ideas in co-creation workshops with:</p><ul><li>Children</li><li>Youth</li><li>Organized and not organized neighbors</li></ul>',
+          cardText: 'Citizens provide ideas in co-creation workshops'
         }
       ]
-    }
+    };
     return (
       <div className="App">
-        <div className="stages"> 
-        {
-          stages.stages.map((stage) => {
-            return (
-              <div className="stage"> 
-                <h2 className="stage-title" title={stage.stageText}>{stage.stageTitle}</h2>
-              </div>
-            );
-          })
-        }
-        </div>
+        <ToCBoard {...board} />
       </div>
     );
   }

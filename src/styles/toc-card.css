@@ -1,7 +1,25 @@
 .toc-card-container {
   list-style: none;
+  margin: 1em;
+  padding: 0.65em;
+  border-radius: 0.3em;
+  background: #2656D0;
+  color: #FFF;
+  font-size: 0.85em;
 }
 
-.toc-card-text li {
+.toc-card-text{
   list-style: none;
+  text-align: left;
+  line-height: 1.25em;
+}
+
+.toc-card-html p {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.toc-stage-container .toc-card-html ul {
+  list-style-type: circle;
+  padding: 0 1em;
 }

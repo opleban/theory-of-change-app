@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ToCCard from './toc-card';
+import { Col } from 'react-flexbox-grid';
 import '../styles/toc-stage.css'
 
 class ToCStage extends Component {
@@ -8,16 +9,18 @@ class ToCStage extends Component {
     console.log(this.props);
 
     return (
-      <div className="toc-stage"> 
-        <h2 className="toc-stage-title" title={stageDesc}>{stageTitle}</h2>
-        <ul>
-          {
-            stageCards.map((card, i) => { 
-              return <li className="toc-card-container" key={i}><ToCCard {...card} /></li>
-            })
-          }
-        </ul>
-      </div>
+      <Col lg={2}>
+        <div className="toc-stage-container"> 
+          <h2 className="toc-stage-title" title={stageDesc}>{stageTitle}</h2>
+          <ul>
+            {
+              stageCards.map((card, i) => { 
+                return <li className="toc-card-container" key={i}><ToCCard {...card} /></li>
+              })
+            }
+          </ul>
+        </div>
+      </Col>
     );
   }
 }

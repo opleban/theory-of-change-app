@@ -4,14 +4,19 @@ import { Col } from 'react-flexbox-grid';
 import '../styles/toc-stage.css'
 
 class ToCStage extends Component {
+  getHeader(props) {
+    const {stageDesc, stageTitle, noHeader} = props;
+    return noHeader ?
+      <div/>:
+      <h2 className="toc-stage-title" title={stageDesc}>{stageTitle}</h2>
+  }
   render() {
-    const {stageDesc, stageTitle, stageCards} = this.props;
-    console.log(this.props);
+    const {stageCards} = this.props;
 
     return (
       <Col lg={2}>
         <div className="toc-stage-container"> 
-          <h2 className="toc-stage-title" title={stageDesc}>{stageTitle}</h2>
+          {this.getHeader(this.props)}
           <ul>
             {
               stageCards.map((card, i) => { 

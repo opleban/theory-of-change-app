@@ -4,14 +4,12 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import '../styles/toc-board.css';
 
 class ToCBoard extends Component {
-  getCardsByStage(stage, cards) {
-    console.log(stage);
-    return cards.filter((card) => { return card.cardStage === stage; })
+  getCardsByStage(stageId, cards) {
+    return cards.filter((card) => { return card.cardStage === stageId; })
   }
 
   render() {
     const { title, stages, cards } = this.props;
-
     return (
       <div className="toc-board-container">
         <div className="toc-board-title-wrapper">
@@ -22,7 +20,7 @@ class ToCBoard extends Component {
             <Row> 
             {
               stages.map((stage, i) => {
-                const stageCards = this.getCardsByStage(stage.stageTitle, cards)
+                const stageCards = this.getCardsByStage(stage.id, cards)
                 return (<ToCStage key={i} stageCards={stageCards} {...stage} />)
               })
             }

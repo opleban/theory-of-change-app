@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import ToCStage from './toc-stage';
 
 class ToCBoard extends Component {
-  groupCardsByStage(props) {
-    const {stage, cards} = props;
-    
+  getCardsByStage(stage, cards) {
+    console.log(stage);
+    return cards.filter((card) => { return card.cardStage === stage; })
   }
+
   render() {
     const { title, stages, cards } = this.props;
 
@@ -15,7 +16,8 @@ class ToCBoard extends Component {
         <div className="toc-stages"> 
         {
           stages.map((stage, i) => {
-            return (<ToCStage key={i} {...stage} />)
+            const stageCards = this.getCardsByStage(stage.stageTitle, cards)
+            return (<ToCStage key={i} stageCards={stageCards} {...stage} />)
           })
         }
         </div>

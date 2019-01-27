@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ToCStage from './toc-stage';
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import '../styles/toc-board.css';
+import '../styles/toc-board.scss';
 
 class ToCBoard extends Component {
   getCardsByStage(stageId, cards) {
@@ -16,7 +16,7 @@ class ToCBoard extends Component {
           <div className="toc-board-title-container">
             <h1 className="toc-board-title">{title}</h1>
             <img src="assets/Humaaans/sitting-3.png" />
-          </div>
+            </div>
         </div>
         <div className="toc-stages-container">
           <Grid fluid>

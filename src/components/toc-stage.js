@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ToCCard from './toc-card';
 import { Col } from 'react-flexbox-grid';
+import MediaQuery from 'react-responsive';
 import '../styles/toc-stage.css'
 
 class ToCStage extends Component {
@@ -16,6 +17,7 @@ class ToCStage extends Component {
   }
 
   // There must be a better way than this. Makes you miss Ruby
+
   generateLoopArray(num) {
     const ary = []
     for(let i=0; i<num; i++) {
@@ -24,7 +26,7 @@ class ToCStage extends Component {
     return ary;
   }
 
-  getCardsBySection(section, cards) {
+  getCardsBySection(section, cards){
     return cards.filter((card) => { return card.section === section; })
   }
 
@@ -39,12 +41,25 @@ class ToCStage extends Component {
           minHeight: `${sectionHeight}px`
         };
         return (
-          <div className="toc-stage-section" style={sectionStyle} key={i}>
-            {
-              this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
-                return <div className="toc-card-container" key={i}><ToCCard {...card} /></div>
-              })
-            }
+          <div key={i}>
+            <MediaQuery maxWidth={991}>
+              <div className="toc-stage-section">
+                {
+                  this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
+                    return <div className="toc-card-container" key={i}><ToCCard {...card} /></div>
+                  })
+                }
+              </div>
+            </MediaQuery>
+            <MediaQuery minWidth={992}>
+              <div className="toc-stage-section" style={sectionStyle}>
+                {
+                  this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
+                    return <div className="toc-card-container" key={i}><ToCCard {...card} /></div>
+                  })
+                }
+              </div>
+            </MediaQuery>
           </div>
         );
       })

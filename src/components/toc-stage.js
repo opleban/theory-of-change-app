@@ -36,7 +36,7 @@ class ToCStage extends Component {
         const sectionId = section + 1;
         const sectionHeight = this.getSectionHeight(sectionId);
         const sectionStyle = {
-          height: `${sectionHeight}px`
+          minHeight: `${sectionHeight}px`
         };
         return (
           <div className="toc-stage-section" style={sectionStyle} key={i}>

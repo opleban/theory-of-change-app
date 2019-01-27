@@ -15,7 +15,7 @@ class ToCBoard extends Component {
         <div className="toc-board-title-wrapper">
           <div className="toc-board-title-container">
             <h1 className="toc-board-title">{title}</h1>
-            <img src="../assets/Humaaans/sitting-3.png" />
+            <img src="assets/Humaaans/sitting-3.png" />
           </div>
         </div>
         <div className="toc-stages-container">

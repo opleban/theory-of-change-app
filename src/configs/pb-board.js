@@ -73,7 +73,8 @@ export default {
       cardText: {
         en: 'Policy in San Fermin does not reflect local knowledge (municipal officials lack knowledge of citizens needs and preferences)',
         es: 'Policy in San Fermin does not reflect local knowledge (municipal officials lack knowledge of citizens needs and preferences) Castellano'
-      }
+      },
+      section: 1
     },
     {
       cardStage: INPUT.id,
@@ -268,7 +269,8 @@ export default {
       cardText: {
         en: 'Policy reflects local knowledge, needs, and preferences',
         es: 'Policy reflects local knowledge, needs, and preferences ES'
-      }
+      },
+      section: 1
     }
   ],
   stages: [

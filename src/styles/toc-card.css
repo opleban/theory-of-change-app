@@ -21,5 +21,8 @@
 
 .toc-stage-container .toc-card-html ul {
   list-style-type: circle;
-  padding: 0 1em;
+}
+
+.toc-stage-container .toc-card-html li {
+  margin: 0 2em;
 }

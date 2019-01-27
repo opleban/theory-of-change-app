@@ -9,11 +9,14 @@ class ToCBoard extends Component {
   }
 
   render() {
-    const { title, stages, cards } = this.props;
+    const { title, stages, cards, numOfSections, sectionConfigs } = this.props;
     return (
       <div className="toc-board-container">
         <div className="toc-board-title-wrapper">
-          <h1 className="toc-board-title">{title}</h1>
+          <div className="toc-board-title-container">
+            <h1 className="toc-board-title">{title}</h1>
+            <img src="../assets/Humaaans/sitting-3.png" />
+          </div>
         </div>
         <div className="toc-stages-container">
           <Grid fluid>
@@ -21,7 +24,10 @@ class ToCBoard extends Component {
             {
               stages.map((stage, i) => {
                 const stageCards = this.getCardsByStage(stage.id, cards)
-                return (<ToCStage key={i} stageCards={stageCards} {...stage} />)
+                return ( <ToCStage key={i} 
+                                   sectionConfigs={sectionConfigs} 
+                                   numOfSections={numOfSections} 
+                                   stageCards={stageCards} {...stage} />)
               })
             }
             </Row>

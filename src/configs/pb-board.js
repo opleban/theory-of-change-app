@@ -21,8 +21,10 @@ NEEDS TO RETURN THIS:
 }
 **/
 export function getPBBoardLocale(pbBoard, locale='en') {
-  const { style, title, cards, stages } = pbBoard;
+  const { sectionConfigs, title, cards, stages, numOfSections } = pbBoard;
   return {
+    numOfSections,
+    sectionConfigs,
     title: title[locale],
     cards: cards.map((card) => {
       const {cardStage, cardText, cardHTML, section } = card;
@@ -46,10 +48,25 @@ export function getPBBoardLocale(pbBoard, locale='en') {
 
 export default {
   title: {
-    en: 'Participatory Budget',
-    es: 'Prosopuestas Participativas'
+    en: 'San Fermin Library - Co-Creation',
+    es: 'Biblioteca de San Fermin - Co-Creación'
   },
+  numOfSections: 4,
   style: 'default',
+  sectionConfigs: {
+    1: {
+      height: 100,
+    },
+    2: {
+      height: 200,
+    },
+    3: {
+      height: 400,
+    },
+    4: {
+      height: 200
+    }
+  },
   cards: [
     {
       cardStage: PROBLEM.id,
@@ -253,8 +270,6 @@ export default {
         es: 'Policy reflects local knowledge, needs, and preferences ES'
       }
     }
-
-
   ],
   stages: [
     {

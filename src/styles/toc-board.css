@@ -1,10 +1,26 @@
 .toc-stages-container {
-  background: #EDEDED;
   padding: 1em 0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.toc-board-title-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .toc-board-title-wrapper {
   background: #164EEE;
   color: #EDEDED;
   padding: 0.1em 2em;
   text-align: left;
+  height: 5em;
+}
+
+.toc-board-title-wrapper h1 {
+  display: inline-block;
+}
+.toc-board-title-wrapper img {
+  height: 5em;
+  float: right;
+  display: inline-block;
 }

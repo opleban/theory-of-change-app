@@ -55,16 +55,20 @@ export default {
   style: 'default',
   sectionConfigs: {
     1: {
-      height: 100,
+      height: 75,
+      color: 'rgba(38, 86, 208, 1)'
     },
     2: {
-      height: 200,
+      height: 150,
+      color: 'rgba(238, 132, 52, 1)'
     },
     3: {
-      height: 400,
+      height: 285,
+      color: 'rgba(201, 93, 99, 1)'
     },
     4: {
-      height: 200
+      height: 150,
+      color: 'rgba(113, 126, 195, 1)'
     }
   },
   cards: [

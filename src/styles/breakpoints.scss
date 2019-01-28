@@ -2,17 +2,18 @@ $small-width: 700px;
 $medium-width: 991px;
 $large-width: 1200px;
 
-@mixin small-screen {
-  @media (max-width: #{$medium-width - 1px}) {
+@mixin tiny-screen {
+  @media (max-width: #{$small-width - 1px}) {
     @content;
   }
 }
 
-@mixin not-small-screen {
-  @media (min-width: #{$small-width + 1px}) {
+@mixin small-screen {
+  @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
     @content;
   }
 }
+
 
 @mixin medium-screen {
   @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
@@ -22,6 +23,12 @@ $large-width: 1200px;
 
 @mixin large-screen {
   @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin not-small-screen {
+  @media (min-width: #{$small-width + 1px}) {
     @content;
   }
 }

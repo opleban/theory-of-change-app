@@ -1,9 +1,8 @@
 .toc-card-container {
   list-style: none;
-  margin: 1em;
+  margin: 0.5em;
   padding: 0.65em;
   border-radius: 0.3em;
-  background: #2656D0;
   color: #FFF;
   font-size: 0.85em;
 }

@@ -21,14 +21,24 @@ getCardHeight(props=this.props) {
  **/ 
 
   render() {
-    const {cardText} = this.props;
+    const {cardText, cardColor} = this.props;
+    const cardStyle = {
+      backgroundColor: cardColor
+    };
 
     return (
-      <div className="toc-card"> 
-        <div className="toc-card-text">{this.renderCardText()}</div>
+      <div className="toc-card-container" style={cardStyle}>
+        <div className="toc-card"> 
+          <div className="toc-card-text">{this.renderCardText()}</div>
+        </div>
       </div>
     );
   }
 }
+
+ToCCard.defaultProps = {
+  cardText: "I'm a card. Please add text to me.",
+  cardColor: '#2A5ACD'
+};
 
 export default ToCCard;

@@ -7,22 +7,24 @@ import '../styles/toc-stage.css'
 class ToCStage extends Component {
   renderHeader(props=this.props) {
     const {stageDesc, stageTitle, noHeader, numOfSections} = props;
+
     return noHeader ?
       <div/>:
       <h2 className="toc-stage-title" title={stageDesc}>{stageTitle}</h2>
   }
 
-  getSectionHeight(sectionId, props=this.props) {
-    return props.sectionConfigs[sectionId].height;
+  getSectionProperty(sectionId, configName, props=this.props) {
+    return props.sectionConfigs[sectionId][configName];
   }
 
   // There must be a better way than this. Makes you miss Ruby
 
   generateLoopArray(num) {
-    const ary = []
+    const ary = [];
     for(let i=0; i<num; i++) {
       ary.push(i);
     }
+
     return ary;
   }
 
@@ -36,17 +38,20 @@ class ToCStage extends Component {
     return (
       loopAry.map((section, i) => {
         const sectionId = section + 1;
-        const sectionHeight = this.getSectionHeight(sectionId);
+        const sectionHeight = this.getSectionProperty(sectionId, 'height');
+        const sectionColor = this.getSectionProperty(sectionId, 'color');
+
         const sectionStyle = {
           minHeight: `${sectionHeight}px`
         };
+
         return (
           <div key={i}>
             <MediaQuery maxWidth={991}>
               <div className="toc-stage-section">
                 {
                   this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
-                    return <div className="toc-card-container" key={i}><ToCCard {...card} /></div>
+                    return  <ToCCard key={`${i}_mobile`} {...card} />
                   })
                 }
               </div>
@@ -55,7 +60,7 @@ class ToCStage extends Component {
               <div className="toc-stage-section" style={sectionStyle}>
                 {
                   this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
-                    return <div className="toc-card-container" key={i}><ToCCard {...card} /></div>
+                    return <ToCCard key={`${i}_normal`} cardColor={sectionColor} {...card} />
                   })
                 }
               </div>

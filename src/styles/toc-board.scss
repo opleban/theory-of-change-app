@@ -22,7 +22,7 @@
   }
 }
 
-@include small-screen {
+@include tiny-screen {
   .toc-board-title-wrapper {
     height: 10em;
     .toc-board-title-container{
@@ -31,9 +31,6 @@
 
     h1 {
       font-size: 1.25em;
-    }
-
-    img {
     }
   }
 }

@@ -51,7 +51,7 @@ class ToCStage extends Component {
               <div className="toc-stage-section">
                 {
                   this.getCardsBySection(sectionId, stageCards).map((card, i) => { 
-                    return  <ToCCard key={`${i}_mobile`} {...card} />
+                    return  <ToCCard cardColor={sectionColor} key={`${i}_mobile`} {...card} />
                   })
                 }
               </div>

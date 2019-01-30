@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/theory-of-change-app/static/js/runtime~main.52dcd695.js"
   },
   {
-    "revision": "77bac58bb10bfcf84c86",
-    "url": "/theory-of-change-app/static/js/main.77bac58b.chunk.js"
+    "revision": "9af968cee366fdc97c50",
+    "url": "/theory-of-change-app/static/js/main.9af968ce.chunk.js"
   },
   {
     "revision": "f853aec5214fa1602346",
     "url": "/theory-of-change-app/static/js/1.f853aec5.chunk.js"
   },
   {
-    "revision": "77bac58bb10bfcf84c86",
+    "revision": "9af968cee366fdc97c50",
     "url": "/theory-of-change-app/static/css/main.0e167095.chunk.css"
   },
   {
@@ -20,11 +20,11 @@ self.__precacheManifest = [
     "url": "/theory-of-change-app/static/css/1.8f33599a.chunk.css"
   },
   {
-    "revision": "e71a6c5e935fdd24aea13dc3c6d73316",
+    "revision": "dd78c7c885b65b12c531adad44cc8388",
     "url": "/theory-of-change-app/index.html"
   },
   {
-    "revision": "43c4ef88c903556bf1575dab3ebedb8e",
+    "revision": "8325596ef87b18a13aca6c0e92a30967",
     "url": "/theory-of-change-app/es.html"
   }
 ];

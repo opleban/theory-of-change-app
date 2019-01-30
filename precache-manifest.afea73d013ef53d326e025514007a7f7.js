@@ -22,5 +22,9 @@ self.__precacheManifest = [
   {
     "revision": "e71a6c5e935fdd24aea13dc3c6d73316",
     "url": "/theory-of-change-app/index.html"
+  },
+  {
+    "revision": "43c4ef88c903556bf1575dab3ebedb8e",
+    "url": "/theory-of-change-app/es.html"
   }
 ];

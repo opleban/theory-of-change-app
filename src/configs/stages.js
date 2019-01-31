@@ -3,7 +3,7 @@ export default {
     id: 'problem',
     SINGULAR: {
       en: 'Problem',
-      es: 'Problema'
+      es: 'Problema/Necesidad'
     },
     PLURAL: {
       en: 'Problems',
@@ -17,12 +17,12 @@ export default {
   INPUT: {
     id: 'input',
     SINGULAR: {
-      en: 'Input/Activity',
-      es: 'Actividad'
+      en: 'Inputs/Activitys',
+      es: 'Insumos/Actividades'
     },
     PLURAL: {
       en: 'Inputs/Activities',
-      es: 'Actividades'
+      es: 'Insumos/Actividades'
     },
     DESCRIPTION: {
       en: 'Insert coin here.',
@@ -33,41 +33,41 @@ export default {
     id: 'output',
     SINGULAR: {
       en: 'Output',
-      es: 'Output Castellano'
+      es: 'Producto'
     },
     PLURAL: {
       en:'Outputs',
-      es: 'Outpus Castellano'
+      es: 'Productos'
     },
     DESCRIPTION: {
       en: 'Point this way forward.',
-      es: 'Point this way Castellano forward.'
+      es: 'Point this way Castellano'
     }
   },
   INTERMEDIATE_OUTCOME: {
     id: 'int_outcome',
     SINGULAR: {
       en: 'Intermediate Outcome',
-      es: 'Intermediate Outcome ES'
+      es: 'Resultado Intermedio'
     },
     PLURAL: {
       en: 'Intermediate Outcomes',
-      es: 'Intermediate Outcomes ES'
+      es: 'Resultados intermedios'
     },
     DESCRIPTION: {
       en: 'Short-term gain.',
-      es: 'Short-term gain. ES'
+      es: 'Short-term gain.'
     }
   },
   FINAL_OUTCOME: {
     id: 'final_outcome',
     SINGULAR: {
       en: 'Final Outcome',
-      es: 'Final Outcome ES'
+      es: 'Resultado Final'
     },
     PLURAL: {
       en: 'Final Outcomes',
-      es: 'Final Outcomes ES'
+      es: 'Resultados Finales'
     },
     DESCRIPTION: {
       en: 'Long-term profit.',

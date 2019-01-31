@@ -10,3 +10,10 @@
   color: #04275A;
   height: 2em;
 }
+
+.toc-stage-section {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

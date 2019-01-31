@@ -1,0 +1,29 @@
+﻿Card Stage,Card Text EN,Card Text ES,Card HTML EN,Card HTML ES,Section
+problem,Policy in San Fermin does not reflect local knowledge (municipal officials lack knowledge of citizens needs and preferences),Política local no incorpora el conocimiento local de los vecinos sobre sus necesidades y preferencias (conocimiento que reside en la ciudadanía no es la administración),,,1
+input,Constitute Steering Committee,Constitución del Grupo Motor,,,1
+input,Steering Committee identifes key stakeholders with local knowledge.,Grupo Motor identifica actores relevantes con conocimiento local,,,1
+input,Grupo Motor develops questionnaire for needs assesment and ran survey,Grupo Motor desarrolla cuestionario de diagnóstico de necesidades,,,2
+input,Citizens provide ideas in co-creation workshops,Citizens provide ideas in co-creation workshops,<ul>Citizens provide ideas in co-creation workshops with:<li>Children</li><li>Youth</li><li>Organized and not organized neighbors</li></ul>,<ul>Vecinos proveen sus ideas en talleres de co-creación con:<li>Niños</li><li>Jóvenes</li><li>Vecinos organizados y no organizados</li></ul>,3
+input,Dinamizadores facilitate the process,Dinamizadores moderan el proceso,,,3
+input,Technical profile staff/participants translate ideas into design,Personal técnico traduce ideas a diseño,,,3
+input,Conduct outreach and provide information on the process,Administración y Grupo Motor difunden y proveen información sobre el proceso,,,4
+output,Steering Committee constituted,Grupo Motor constituido,,,1
+output,Map of relevant stakeholders,Mapeo de actores,,,1
+output,Needs assesment developed,Diagnóstico complete,,,2
+output,Workshops & co-creation activties conducted,Talleres y actividades de co-creación implentadas,,,3
+output,Citizens’ ideas collected,Ideas de los vecinos recogidas,,,3
+output,Ideas systematized and translated into a design,Ideas sistematizadas y traducidas a diseño técnico,,,3
+output,Information disseminated,Información difundida,,,4
+int_outcome,Continued commitment,Compromiso continuado,,,1
+int_outcome,Steering Committee knows the reality of the neighborhood,Grupo Motor conoce realidad del barrio,,,1
+int_outcome,Stakeholders map represents neighborhood,Mapeo de actores es representativo del vecindario,,,1
+int_outcome,Citizens partcipate in needs assesment,Vecinos participan del diagnóstico,,,2
+int_outcome,Needs assessment accurately captures needs,Diagnóstico recoge con fidelidad las necesidades,,,2
+int_outcome,Workshop participants are representative of target population,Participantes en los talleres son representativos de los vecinos,,,3
+int_outcome,Quality of facilitation,Calidad de la moderación,,,3
+int_outcome,Originality of solutions,Originalidad de las soluciones,,,3
+int_outcome,Feasibility of solutions,Factibilidad de las soluciones,,,3
+int_outcome,End-user value of solutions,Valor para el usuario de las soluciones,,,3
+int_outcome,Transparency,Vecinos informados sobre el proceso,,,4
+int_outcome,Influence and credibility,Influencia y credibilidad,,,4
+final_outcome,"Policy reflects local knowledge, needs, and preferences",Política local incorpora el conocimiento local de los vecinos sobre sus necesidades y preferencias (conocimiento que reside en la ciudadanía no es la administración),,,1

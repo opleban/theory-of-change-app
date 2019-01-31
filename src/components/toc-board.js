@@ -38,4 +38,12 @@ class ToCBoard extends Component {
   }
 }
 
+ToCBoard.defaultProps = {
+  title: '',
+  stages: [],
+  cards: [],
+  numOfSections: 1,
+  sectionConfigs: {}
+};
+
 export default ToCBoard;

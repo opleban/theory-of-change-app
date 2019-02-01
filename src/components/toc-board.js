@@ -8,8 +8,21 @@ class ToCBoard extends Component {
     return cards.filter((card) => { return card.cardStage === stageId; })
   }
 
+  renderstageCards(props=this.props) {
+    const { title, stages, cards, numOfSections, sectionConfigs } = props;
+    return (
+      stages.map((stage, i) => {
+        const stageCards = this.getCardsByStage(stage.id, cards)
+        return (<ToCStage key={i} 
+                  sectionConfigs={sectionConfigs} 
+                  numOfSections={numOfSections} 
+                  stageCards={stageCards} {...stage} />)
+      })
+    )
+  }
+
   render() {
-    const { title, stages, cards, numOfSections, sectionConfigs } = this.props;
+    const {title} = this.props
     return (
       <div className="toc-board-container">
         <div className="toc-board-title-wrapper">
@@ -21,15 +34,7 @@ class ToCBoard extends Component {
         <div className="toc-stages-container">
           <Grid fluid>
             <Row> 
-            {
-              stages.map((stage, i) => {
-                const stageCards = this.getCardsByStage(stage.id, cards)
-                return ( <ToCStage key={i} 
-                                   sectionConfigs={sectionConfigs} 
-                                   numOfSections={numOfSections} 
-                                   stageCards={stageCards} {...stage} />)
-              })
-            }
+            {this.renderstageCards(this.props)}
             </Row>
           </Grid>
         </div>

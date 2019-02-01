@@ -16,10 +16,8 @@ class App extends Component {
 
   componentDidMount() {
     const boardReq = loadBoardData('data/san_fermin_data.csv', sanFerminConfig, (boardData)=> {
-      console.log(boardData);
       const currentLocale = getCurrentLocale(window.location, DEFAULT_LOCALE, AVAILABLE_LOCALES);
       const localizedBoardData = getBoardLocale(boardData, currentLocale);
-      console.log(localizedBoardData);
       this.setState({
         boardData: localizedBoardData
       });

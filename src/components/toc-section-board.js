@@ -30,11 +30,39 @@ class ToCBoard extends Component {
     return cards.filter((card) => { return card.cardStage === stageId; })
   }
 
+  renderStage(showHeader, stageSectionCards, stage) {
+    return showHeader ? 
+      (<ToCStage key={j} stageCards={stageSectionCards} {...stage} />) :
+      (<ToCStage key={j} noHeader stageCards={stageSectionCards} {...stage} />)
+  }
 
-  render() {
-    const { title, stages, cards } = this.props;
+  renderSections(props=this.props) {
+    const {stages, cards} = props;
     const uniqueSections = this.getUniqueSections(cards);
     const cardsBySection = this.groupCardsBySection(cards);
+
+    return (
+      uniqueSections.map((section, i)=> {
+          const showHeader = i === 0; 
+          const sectionGroup = cardsBySection[section];
+
+          return (
+            <Row key={i}>
+              {
+                stages.map((stage, j) => {
+                  const stageSectionCards = this.getCardsByStage(stage.id, sectionGroup)
+                  return this.renderStage(showHeader, stageSectionCards, stage)
+                })
+              }
+            </Row>
+          );
+        })
+    );
+  }
+
+
+  render() {
+    const {title} = this.props;
     return (
       <div className="toc-board-container">
         <div className="toc-board-title-wrapper">
@@ -43,22 +71,7 @@ class ToCBoard extends Component {
         <div className="toc-stages-container">
           <Grid fluid>
           {
-            uniqueSections.map((section, i)=> {
-              const showHeader = i === 0; 
-              const sectionGroup = cardsBySection[section];
-              return (
-                <Row key={i}>
-                  {
-                    stages.map((stage, j) => {
-                      const stageSectionCards = this.getCardsByStage(stage.id, sectionGroup)
-                      return showHeader ? 
-                        (<ToCStage key={j} stageCards={stageSectionCards} {...stage} />) :
-                        (<ToCStage key={j} noHeader stageCards={stageSectionCards} {...stage} />)
-                    })
-                  }
-                </Row>
-              );
-            })
+            this.renderSections(this.props);
           }
           </Grid>
         </div>

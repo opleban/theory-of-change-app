@@ -25,19 +25,19 @@ self.__precacheManifest = [
   },
   {
     "revision": "299336b0f6a6a6d2d07ad34d8dd632f9",
-    "url": "/theory-of-change-app/san-fermin.html"
+    "url": "/theory-of-change-app/san-fermin/index.html"
   },
   {
     "revision": "299336b0f6a6a6d2d07ad34d8dd632f9",
-    "url": "/theory-of-change-app/participatory-budget.html"
+    "url": "/theory-of-change-app/participatory-budget/index.html"
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",
-    "url": "/theory-of-change-app/es/san-fermin.html"
+    "url": "/theory-of-change-app/es/san-fermin/index.html"
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",
-    "url": "/theory-of-change-app/es/participatory-budget.html"
+    "url": "/theory-of-change-app/es/participatory-budget/index.html"
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",

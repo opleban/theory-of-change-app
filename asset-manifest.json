@@ -11,10 +11,10 @@
   "static/css/1.94415e50.chunk.css.map": "/theory-of-change-app/static/css/1.94415e50.chunk.css.map",
   "index.html": "/theory-of-change-app/index.html",
   "es.html": "/theory-of-change-app/es.html",
-  "san-fermin.html": "/theory-of-change-app/san-fermin.html",
-  "participatory-budget.html": "/theory-of-change-app/participatory-budget.html",
-  "es/participatory-budget.html": "/theory-of-change-app/es/participatory-budget.html",
-  "es/san-fermin.html": "/theory-of-change-app/es/san-fermin.html",
-  "precache-manifest.d831112acdd2c36e94f427fe615ad841.js": "/theory-of-change-app/precache-manifest.d831112acdd2c36e94f427fe615ad841.js",
+  "san-fermin/index.html": "/theory-of-change-app/san-fermin/index.html",
+  "participatory-budget/index.html": "/theory-of-change-app/participatory-budget/index.html",
+  "es/participatory-budget/index.html": "/theory-of-change-app/es/participatory-budget/index.html",
+  "es/san-fermin/index.html": "/theory-of-change-app/es/san-fermin/index.html",
+  "precache-manifest.6efc99dec42af50784924d766262aaaf.js": "/theory-of-change-app/precache-manifest.6efc99dec42af50784924d766262aaaf.js",
   "service-worker.js": "/theory-of-change-app/service-worker.js"
 }

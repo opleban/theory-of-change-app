@@ -6,3 +6,7 @@ export function getCurrentLocale(location, defaultLocale, availableLocales) {
     localeMatch[1] :
     defaultLocale;
 }
+
+export function getCurrentPath(location) {
+	return location.pathname;
+}

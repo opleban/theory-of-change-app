@@ -5,7 +5,6 @@ class ToCCard extends Component {
 
   renderCardText() {
     const {cardText, cardHTML} = this.props;
-    console.log('CARD', cardHTML);
     return cardHTML ? 
     (<div className="toc-card-html" 
       dangerouslySetInnerHTML={{__html: cardHTML}}></div>) :

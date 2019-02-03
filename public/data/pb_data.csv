@@ -14,12 +14,12 @@ output	Proposals are filtered	Proposals are filtered			1
 output	Proposals are valuated	Proposals are valuated			1
 output	Proposals are prioritized	Proposals are prioritized			1
 output	Proposals are voted on	Proposals are voted on			1
-int_outcomes	Residents pariticpate online	Residents pariticpate online			1
-int_outcomes	Rsidents participate in-person	Rsidents participate in-person			1
-int_outcomes	Proposals represent citizen interest	Proposals represent citizen interest			1
-int_outcomes	Proposals are more diverse	Proposals are more diverse			1
-int_outcomes	"Proposals are reasible, non-duplicative (higher quality)"	"Proposals are reasible, non-duplicative (higher quality)"			1
-int_outcomes	Approved proposals are more responsive to citizen interests and priorities	Approved proposals are more responsive to citizen interests and priorities			1
+int_outcome	Residents pariticpate online	Residents pariticpate online			1
+int_outcome	Rsidents participate in-person	Rsidents participate in-person			1
+int_outcome	Proposals represent citizen interest	Proposals represent citizen interest			1
+int_outcome	Proposals are more diverse	Proposals are more diverse			1
+int_outcome	"Proposals are reasible, non-duplicative (higher quality)"	"Proposals are reasible, non-duplicative (higher quality)"			1
+int_outcome	Approved proposals are more responsive to citizen interests and priorities	Approved proposals are more responsive to citizen interests and priorities			1
 final_outcome	Participatory Budget funds a diverse set of proposals that represent the preference and needs of citizens	Participatory Budget funds a diverse set of proposals that represent the preference and needs of citizens			1
 problem	Citizens find it difficult to stay informed about and engaged with the budget process.	Citizens find it difficult to stay informed about and engaged with the budget process.			2
 input	City officials disseminate information about the Participatory Budget process	City officials disseminate information about the Participatory Budget process			2
@@ -28,9 +28,9 @@ input	Dinamizadores facilitate public engagement with the Participatory Budget p
 output	Information about Participatory Budgeting is disseminated offline	Information about Participatory Budgeting is disseminated offline			2
 output	Information about Participatory Budgeting is disseminated through Decide Madrid	Information about Participatory Budgeting is disseminated through Decide Madrid			2
 output	Outreach and coordination activities	Outreach and coordination activities			2
-int_outcomes	Informed Users	Informed Users			2
-int_outcomes	Transparency	Transparency			2
-int_outcomes	Credibility	Credibility			2
-int_outcomes	Greater engagement	Greater engagement			2
-int_outcomes	Inclusivity	Inclusivity			2
-int_outcomes	Greater coordination between the public and technicians	Greater coordination between the public and technicians			2
+int_outcome	Informed Users	Informed Users			2
+int_outcome	Transparency	Transparency			2
+int_outcome	Credibility	Credibility			2
+int_outcome	Greater engagement	Greater engagement			2
+int_outcome	Inclusivity	Inclusivity			2
+int_outcome	Greater coordination between the public and technicians	Greater coordination between the public and technicians			2

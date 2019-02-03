@@ -8,5 +8,12 @@ export function getCurrentLocale(location, defaultLocale, availableLocales) {
 }
 
 export function getCurrentPath(location) {
-	return location.pathname;
+  const PATHS = ['san-fermin', 'participatory-budget'];
+  const path = location.pathname.match(RegExp("[^/]+(?=/$|$)"));
+  if (path) {
+    if (PATHS.includes(path[0])) {
+      return path[0]
+    }
+  }
+  return '/';
 }

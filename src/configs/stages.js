@@ -3,7 +3,7 @@ export default {
     id: 'problem',
     SINGULAR: {
       en: 'Problem',
-      es: 'Problema/Necesidad'
+      es: 'Problema'
     },
     PLURAL: {
       en: 'Problems',
@@ -17,12 +17,12 @@ export default {
   INPUT: {
     id: 'input',
     SINGULAR: {
-      en: 'Inputs/Activitys',
-      es: 'Insumos/Actividades'
+      en: 'Input',
+      es: 'Insumo'
     },
     PLURAL: {
-      en: 'Inputs/Activities',
-      es: 'Insumos/Actividades'
+      en: 'Inputs-Activities',
+      es: 'Insumos-Actividades'
     },
     DESCRIPTION: {
       en: 'Insert coin here.',

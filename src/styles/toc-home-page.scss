@@ -1,0 +1,25 @@
+.toc-tile {
+  height: 5em;
+  background: rgba(38, 86, 208, 1);
+  position: relative;
+  a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    color: #DFD;
+    text-decoration: none;
+    transition: 0.15s;
+    &:hover {
+      background: darken(rgba(38, 86, 208, 1),10%);;
+    }
+    .toc-tile-name {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+    }
+  }
+}

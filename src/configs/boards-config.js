@@ -42,6 +42,7 @@ export function loadBoardData(file, config, callbackFn) {
 function _convertBoardDataToBoardObject(data, config) {
   config.cards = 
     data.map((card) => {
+      console.log(card);
       return {
         cardStage: card['Card Stage'],
         cardText: {
@@ -67,6 +68,7 @@ export function getBoardLocale(pbBoard, locale='en') {
     title: title[locale],
     cards: cards.map((card) => {
       const {cardStage, cardText, cardHTML, section } = card;
+      console.log(card);
       return { cardStage,
                cardText: cardText[locale],
                cardHTML: (cardHTML||{})[locale],
@@ -185,12 +187,12 @@ export const pbConfig = {
   style: 'default',
   sectionConfigs: {
     1: {
-      height: 500,
+      height: 475,
       color: 'rgba(38, 86, 208, 1)'
     },
     2: {
-      height: 500,
-      color: 'rgba(238, 132, 52, 1)'
+      height: 325,
+      color: 'rgba(201, 93, 99, 1)'
     }
   },
   

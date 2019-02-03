@@ -41,17 +41,6 @@ function ToCPartialConstructor(dataPath, config) {
   }
 }
 
-export const SanFerminPartial = ToCPartialConstructor('data/san_fermin_data.csv', sanFerminConfig);
+export const SanFerminPartial = ToCPartialConstructor('/data/san_fermin_data.csv', sanFerminConfig);
 
-export const PBPartial = ToCPartialConstructor('data/pb_data.csv', pbConfig);
-
-
-
-// <div className="App">
-//   <TOCRouter>
-//     <SanFerminPartial />
-//     <PBPartial />
-//     <ForosLocalesPartial />
-//     <PlazaDeEspanaPartial />
-//   </TOCRouter>
-// </div>
+export const PBPartial = ToCPartialConstructor('/data/pb_data.csv', pbConfig);

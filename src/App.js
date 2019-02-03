@@ -13,8 +13,8 @@ class App extends Component {
       <div className="App">
         <ToCRouter>
           <HomePagePartial route="/" />
-          <SanFerminPartial route="/san-fermin" />
-          <PBPartial route="/participatory-budget" />
+          <SanFerminPartial route="san-fermin" />
+          <PBPartial route="participatory-budget" />
         </ToCRouter>
       </div>
     );

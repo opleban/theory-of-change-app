@@ -11,14 +11,6 @@ class ToCCard extends Component {
     (<div className="toc-card-text">{cardText}</div>)
   }
 
-/**  
-getCardHeight(props=this.props) {
-  if (['problem', 'final_outcome'].includes(props.cardStage)) {
-
-  }
-}
- **/ 
-
   render() {
     const {cardText, cardColor} = this.props;
     const cardStyle = {

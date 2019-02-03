@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import {getCurrentPath} from '../lib/helpers';
 
-const LocaleContext = React.createContext({});
-
 export default class ToCRouter extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +14,6 @@ export default class ToCRouter extends Component {
     return React.Children
                 .toArray(children)
                 .filter((child) => { 
-                  console.log(child);
                   return child.props.route === this._route; 
                 })
   }

@@ -1,0 +1,36 @@
+Card Stage	Card Text EN	Card Text ES	Card HTML EN	Card HTML ES	Section
+problem	Municipal Budget is not responsive to the preferences and needs of citizens	Municipal Budget is not responsive to the preferences and needs of citizens			1
+input	"City provides online platform for citizens to propose, support and vote for proposals"	"City provides online platform for citizens to propose, support and vote for proposals"			1
+input	"City provides offline access points to propose, support and vote for proposals"	"City provides offline access points to propose, support and vote for proposals"			1
+input	Users submits proposals on Decide Madrid	Users submits proposals on Decide Madrid			1
+input	Users discuss proposals and leave comments on Decide Madrid (deliberation)	Users discuss proposals and leave comments on Decide Madrid (deliberation)			1
+input	"Technicians filter proposals, consolidate duplicates, and valuate proposals"	"Technicians filter proposals, consolidate duplicates, and valuate proposals"			1
+input	Users prioritize (support) and vote on proposals	Users prioritize (support) and vote on proposals			1
+output	"Residents can create, support, and vote for proposals online at Decide Madrid"	"Residents can create, support, and vote for proposals online at Decide Madrid"			1
+output	"Residents can create, support, and vote for proposals in person at 26 Citizen Services Offices"	"Residents can create, support, and vote for proposals in person at 26 Citizen Services Offices"			1
+output	Proposals on Decide Madrid	Proposals on Decide Madrid			1
+output	Comments and discussion are available for proposals	Comments and discussion are available for proposals			1
+output	Proposals are filtered	Proposals are filtered			1
+output	Proposals are valuated	Proposals are valuated			1
+output	Proposals are prioritized	Proposals are prioritized			1
+output	Proposals are voted on	Proposals are voted on			1
+int_outcomes	Residents pariticpate online	Residents pariticpate online			1
+int_outcomes	Rsidents participate in-person	Rsidents participate in-person			1
+int_outcomes	Proposals represent citizen interest	Proposals represent citizen interest			1
+int_outcomes	Proposals are more diverse	Proposals are more diverse			1
+int_outcomes	"Proposals are reasible, non-duplicative (higher quality)"	"Proposals are reasible, non-duplicative (higher quality)"			1
+int_outcomes	Approved proposals are more responsive to citizen interests and priorities	Approved proposals are more responsive to citizen interests and priorities			1
+final_outcome	Participatory Budget funds a diverse set of proposals that represent the preference and needs of citizens	Participatory Budget funds a diverse set of proposals that represent the preference and needs of citizens			1
+problem	Citizens find it difficult to stay informed about and engaged with the budget process.	Citizens find it difficult to stay informed about and engaged with the budget process.			2
+input	City officials disseminate information about the Participatory Budget process	City officials disseminate information about the Participatory Budget process			2
+input	Decide Madrid platform provides the public access to information about the Participatory Budget process	Decide Madrid platform provides the public access to information about the Participatory Budget process			2
+input	Dinamizadores facilitate public engagement with the Participatory Budget process	Dinamizadores facilitate public engagement with the Participatory Budget process			2
+output	Information about Participatory Budgeting is disseminated offline	Information about Participatory Budgeting is disseminated offline			2
+output	Information about Participatory Budgeting is disseminated through Decide Madrid	Information about Participatory Budgeting is disseminated through Decide Madrid			2
+output	Outreach and coordination activities	Outreach and coordination activities			2
+int_outcomes	Informed Users	Informed Users			2
+int_outcomes	Transparency	Transparency			2
+int_outcomes	Credibility	Credibility			2
+int_outcomes	Greater engagement	Greater engagement			2
+int_outcomes	Inclusivity	Inclusivity			2
+int_outcomes	Greater coordination between the public and technicians	Greater coordination between the public and technicians			2

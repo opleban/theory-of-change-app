@@ -85,32 +85,7 @@ export function getBoardLocale(pbBoard, locale='en') {
   }
 }
 
-export const sanFerminConfig = {
-  title: {
-    en: 'San Fermin Library - Co-Creation',
-    es: 'Biblioteca de San Fermin - Co-Creación'
-  },
-  numOfSections: 4,
-  style: 'default',
-  sectionConfigs: {
-    1: {
-      height: 180,
-      color: 'rgba(38, 86, 208, 1)'
-    },
-    2: {
-      height: 125,
-      color: 'rgba(238, 132, 52, 1)'
-    },
-    3: {
-      height: 295,
-      color: 'rgba(201, 93, 99, 1)'
-    },
-    4: {
-      height: 150,
-      color: 'rgba(113, 126, 195, 1)'
-    }
-  },
-  stages: [
+const stages = [
     {
       order: 1,
       id: PROBLEM.id,
@@ -171,8 +146,56 @@ export const sanFerminConfig = {
       }
     }
   ]
+
+export const sanFerminConfig = {
+  title: {
+    en: 'San Fermin Library - Co-Creation',
+    es: 'Biblioteca de San Fermin - Co-Creación'
+  },
+  numOfSections: 4,
+  style: 'default',
+  sectionConfigs: {
+    1: {
+      height: 180,
+      color: 'rgba(38, 86, 208, 1)'
+    },
+    2: {
+      height: 125,
+      color: 'rgba(238, 132, 52, 1)'
+    },
+    3: {
+      height: 295,
+      color: 'rgba(201, 93, 99, 1)'
+    },
+    4: {
+      height: 150,
+      color: 'rgba(113, 126, 195, 1)'
+    }
+  },
+
+  stages
 };
 
+export const pbConfig = {
+  title: {
+    en: 'Participatory Budgeting',
+    es: 'Presupuestos Participativos'
+  },
+  numOfSections: 2,
+  style: 'default',
+  sectionConfigs: {
+    1: {
+      height: 500,
+      color: 'rgba(38, 86, 208, 1)'
+    },
+    2: {
+      height: 500,
+      color: 'rgba(238, 132, 52, 1)'
+    }
+  },
+  
+  stages
+};
 // export default {
 //   title: {
 //     en: 'San Fermin Library - Co-Creation',

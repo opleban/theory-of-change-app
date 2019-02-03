@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ToCBoard from './components/toc-board';
-import {loadBoardData, getBoardLocale, sanFerminConfig} from './configs/pb-board';
+import {loadBoardData, getBoardLocale, sanFerminConfig} from './configs/boards-config';
 import {getCurrentLocale} from './lib/helpers';
 import LocaleConfigs from './configs/locales.js';
 import 'normalize.css';

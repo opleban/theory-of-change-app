@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/theory-of-change-app/precache-manifest.a3ee1bbdd9974d5f04308c99d7f31748.js"
+  "/theory-of-change-app/precache-manifest.691ee6621b63878c31bdbc3112f375a6.js"
 );
 
 workbox.clientsClaim();

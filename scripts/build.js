@@ -193,13 +193,13 @@ function build(previousFileSizes) {
 function copyPublicFolder() {
   const htmlPaths = [paths.appHtml, 
                      paths.appEsHtml,
-                     paths.sanFermin
+                     paths.sanFermin,
                      paths.sanFerminEs,
-                     paths.pb
+                     paths.pb,
                      paths.pbEs];
 
   fs.copySync(paths.appPublic, paths.appBuild, {
     dereference: true,
-    filter: file => (!htmlPaths.includes(file);
+    filter: file => (!htmlPaths.includes(file))
   });
 }

@@ -40,6 +40,23 @@ const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
+function flatten(input) {
+  const stack = [...input];
+  const res = [];
+  while (stack.length) {
+    // pop value from stack
+    const next = stack.pop();
+    if (Array.isArray(next)) {
+      // push back array items, won't modify the original input
+      stack.push(...next);
+    } else {
+      res.push(next);
+    }
+  }
+  //reverse to restore input order
+  return res.reverse();
+}
+
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
@@ -111,6 +128,37 @@ module.exports = function(webpackEnv) {
       });
     }
     return loaders;
+  };
+
+  const htmlTemplatePages = (pages) => {
+    return pages.map((page) => {
+      return new HtmlWebpackPlugin(
+      Object.assign(
+        {},       
+        {
+          inject: true,
+          template: page.template,
+          filename: page.filename
+        },
+        isEnvProduction
+          ? {
+              minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+                removeRedundantAttributes: true,
+                useShortDoctype: true,
+                removeEmptyAttributes: true,
+                removeStyleLinkTypeAttributes: true,
+                keepClosingSlash: true,
+                minifyJS: true,
+                minifyCSS: true,
+                minifyURLs: true,
+              },
+            }
+          : undefined
+      )
+    )
+    })
   };
 
   return {
@@ -468,7 +516,7 @@ module.exports = function(webpackEnv) {
         },
       ],
     },
-    plugins: [
+    plugins: flatten([
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
@@ -495,32 +543,13 @@ module.exports = function(webpackEnv) {
             : undefined
         )
       ),
-      new HtmlWebpackPlugin(
-        Object.assign(
-          {},       
-          {
-            inject: true,
-            template: paths.appEsHtml,
-            filename: 'es.html'
-          },
-          isEnvProduction
-            ? {
-                minify: {
-                  removeComments: true,
-                  collapseWhitespace: true,
-                  removeRedundantAttributes: true,
-                  useShortDoctype: true,
-                  removeEmptyAttributes: true,
-                  removeStyleLinkTypeAttributes: true,
-                  keepClosingSlash: true,
-                  minifyJS: true,
-                  minifyCSS: true,
-                  minifyURLs: true,
-                },
-              }
-            : undefined
-        )
-      ),
+      htmlTemplatePages([
+        {template: paths.appEsHtml, filename: 'es.html'},
+        {template: paths.sanFermin, filename: 'san-fermin/index.html'},
+        {template: paths.pb, filename: 'participatory-budget/index.html'},
+        {template: paths.pbEs, filename: 'es/participatory-budget/index.html'},
+        {template: paths.sanFerminEs, filename: 'es/san-fermin/index.html'},
+      ]),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       isEnvProduction &&
@@ -619,7 +648,7 @@ module.exports = function(webpackEnv) {
           silent: true,
           formatter: typescriptFormatter,
         }),
-    ].filter(Boolean),
+    ]).filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
     node: {

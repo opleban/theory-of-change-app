@@ -1,7 +1,7 @@
 export default {
 	"HOME": {
 		"TITLE": {
-			"es": "CrowdLaw Teoria del cambio",
+			"es": "CrowdLaw Teoria del Cambio",
 			"en": "CrowdLaw Theory of Change"
 		}
 	},

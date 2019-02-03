@@ -29,7 +29,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "299336b0f6a6a6d2d07ad34d8dd632f9",
-    "url": "/theory-of-change-app/particpatory-budget.html"
+    "url": "/theory-of-change-app/participatory-budget.html"
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",
@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",
-    "url": "/theory-of-change-app/es/particpatory-budget.html"
+    "url": "/theory-of-change-app/es/participatory-budget.html"
   },
   {
     "revision": "41bd64fcf8f56cb6ffc2d4afa60e1e54",

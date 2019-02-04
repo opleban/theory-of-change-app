@@ -20,7 +20,7 @@ function renderCaseStudies() {
   return (
     CASE_STUDIES.map((caseStudy, i) => {
       const {name, link} = caseStudy;
-      return ( 
+      return (
         <Col lg={3} key={i}>
           <div className="toc-tile">
             <a href={link}><div className="toc-tile-name">{name}</div></a>
@@ -33,7 +33,7 @@ function renderCaseStudies() {
 
 export default (props) => {
   return (
-    <div className="toc-home-page">
+    <div className="toc-home-page toc-container">
       <h1>{STRINGS.HOME.TITLE[currentLocale]}</h1>
       <div className="toc-tiles">
         <Grid fluid>

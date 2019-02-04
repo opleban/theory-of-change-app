@@ -26,7 +26,7 @@ class ToCBoard extends Component {
     return (
       <div className="toc-board-container">
         <div className="toc-board-title-wrapper">
-          <div className="toc-board-title-container">
+          <div className="toc-board-title-container toc-container">
             <h1 className="toc-board-title">{title}</h1>
             <img src={`${process.env.PUBLIC_URL}/assets/Humaaans/sitting-3.png`} />
             </div>

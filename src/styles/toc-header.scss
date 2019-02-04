@@ -1,0 +1,49 @@
+@import 'breakpoints';
+
+.toc-header {
+  height: 4em;
+  background-color: #FFF;
+  text-align: left;
+  padding: 0 1em;
+  .toc-container {
+    position: relative;
+  }
+  a.toc-site-title {
+    display: block;
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    color: #424242;
+    text-decoration: none;
+    &:visited {
+      color: #424242;
+    }
+    .toc-site-title-text {
+      height: 2em;
+      position: relative;
+      top: 30%;
+      @include tiny-screen {
+        font-size: 1em;
+      }
+    }
+    img.header-logo {
+      height: 2.5em;
+      @include tiny-screen {
+        display: none;
+      }
+    }
+  }
+  .toc-localize-link {
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    a {
+      text-decoration: none;
+      color: #424242;
+    }
+    @include tiny-screen {
+      top: 60%;
+    }
+  }
+
+}

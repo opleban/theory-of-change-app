@@ -22,5 +22,11 @@ export default {
 			"en": "Plaza de España",
 			"es": "Plaza de España"
 		}
+	},
+	"HEADER": {
+		"LANGUAGE": {
+			"es": "Language",
+			"en": "Idioma"
+		}
 	}
 }

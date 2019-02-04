@@ -17,6 +17,10 @@
   padding: 0.1em 2em;
   text-align: left;
   height: 5em;
+  h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
   img {
     height: 5em;
   }
@@ -31,6 +35,7 @@
 
     h1 {
       font-size: 1.25em;
+      margin-block-start: 1.25em;
     }
   }
 }
@@ -39,6 +44,8 @@
   .toc-board-title-wrapper {
     h1 {
       display: inline-block;
+      font-size: 1.5em;
+      margin-block-start: 1em;
     }
 
     img {

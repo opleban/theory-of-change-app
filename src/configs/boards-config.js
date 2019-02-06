@@ -187,7 +187,7 @@ export const pbConfig = {
   style: 'default',
   sectionConfigs: {
     1: {
-      height: 475,
+      height: 485,
       color: 'rgba(38, 86, 208, 1)'
     },
     2: {

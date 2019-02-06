@@ -21,7 +21,7 @@ function renderCaseStudies() {
     CASE_STUDIES.map((caseStudy, i) => {
       const {name, link} = caseStudy;
       return (
-        <Col lg={3} key={i}>
+        <Col lg={3} md={6} key={i}>
           <div className="toc-tile">
             <a href={link}><div className="toc-tile-name">{name}</div></a>
           </div>

@@ -15,7 +15,7 @@ output,Proposals are valuated,Proposals are valuated,,,1
 output,Proposals are prioritized,Proposals are prioritized,,,1
 output,Proposals are voted on,Proposals are voted on,,,1
 int_outcome,Residents pariticpate online,Residents pariticpate online,,,1
-int_outcome,Rsidents participate in-person,Rsidents participate in-person,,,1
+int_outcome,Residents participate in-person,Residents participate in-person,,,1
 int_outcome,Proposals represent citizen interest,Proposals represent citizen interest,,,1
 int_outcome,Proposals are more diverse,Proposals are more diverse,,,1
 int_outcome,"Proposals are reasible, non-duplicative (higher quality)","Proposals are reasible, non-duplicative (higher quality)",,,1

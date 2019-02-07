@@ -44,6 +44,7 @@ export default (props) => {
           </Row>
         </Grid>
       </div>
+      <section id="isso-thread"></section>
     </div>
   );
 }

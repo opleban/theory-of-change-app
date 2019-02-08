@@ -4,6 +4,7 @@ import {getCurrentLocale} from '../lib/helpers';
 import LocaleConfigs from '../configs/locales.js';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import ROUTES from '../configs/routes.js';
+import ToCIssoThread from '../components/toc-isso-thread.js';
 import '../styles/toc-home-page.scss';
 
 const {AVAILABLE_LOCALES, DEFAULT_LOCALE} = LocaleConfigs;
@@ -44,7 +45,7 @@ export default (props) => {
           </Row>
         </Grid>
       </div>
-      <section id="isso-thread"></section>
+      <ToCIssoThread/>
     </div>
   );
 }

@@ -7,6 +7,7 @@
   font-size: 0.85em;
   flex-grow: 1;
   flex-basis: 0;
+  width: 100%;
 }
 
 .toc-card-text{

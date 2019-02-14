@@ -42,5 +42,4 @@ function ToCPartialConstructor(dataPath, config) {
 }
 
 export const SanFerminPartial = ToCPartialConstructor(`${process.env.PUBLIC_URL}/data/san_fermin_data.csv`, sanFerminConfig);
-
 export const PBPartial = ToCPartialConstructor(`${process.env.PUBLIC_URL}/data/pb_data.csv`, pbConfig);
